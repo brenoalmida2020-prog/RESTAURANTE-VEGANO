@@ -1,0 +1,67 @@
+html {
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(222, 217, 217);
+    margin: 0;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header {
+    background-color: rgb(164, 237, 164);
+    padding: 30px;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texts {
+    display: flex;
+    justify-content: flex-start;
+    font-family:'poppins',sans-serif;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 80px;
+    background-color:rgb(53, 177, 94);
+    padding: 20px 40px;
+
+}
+a {
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.texts a {
+    white-space: nowrap;
+    position: relative;
+    color: beige;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.texts a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: beige;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+.texts a:hover::after {
+    width: 100%;
+}
+.texts a.active::after {
+    width: 100%;
+}
