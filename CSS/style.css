@@ -1,23 +1,13 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
     width: 100%;
-    overflow-x: hidden;
 }
 
-body {
-    background-color: rgb(53, 177, 94);   
+body {   
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
     opacity: 0;
+    overflow-x:hidden;
     transform: translateY(40px);
     animation: fadeInUp 0.8s ease-out forwards;
 }
@@ -27,13 +17,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.prota {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
 }
 main {
     width: 100%;
@@ -51,7 +34,7 @@ main {
 .first img {
     max-width: 100%;
     height: auto;
-    display: block;
+    
 }
 .texts {
     display: flex;
@@ -102,15 +85,5 @@ main {
 }
 
 .logos {
-    width: 100%;
-}
-
-.logos img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.filter {
     width: 100%;
 }
